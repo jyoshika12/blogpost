@@ -27,7 +27,7 @@ Zod:
 Used for mandatory schema validation, ensuring all user input (e.g., Title and Content minimum lengths) is checked before it interacts with the backend.
 
 # Setup and Deployment Guide
-1. Local Development Setup
+1. Local Development Setup:
 To run the project locally, you must first connect it to your live Neon PostgreSQL database.
 
 Clone the Repository:
@@ -40,7 +40,7 @@ npm install
 Configure Database: 
 Obtain your credentials (Host, User, Password, DB Name) from your Neon dashboard. Update your root .env file with these credentials:
 
-Code snippet
+Code snippet-
 Example Neon Credentials
 DB_HOST=your-neon-host
 DB_PORT=5432
@@ -58,12 +58,12 @@ npm run db:push
 Run Application:
 npm run dev
 
-2. Vercel Deployment
+2. Vercel Deployment: 
 The application is deployed to Vercel and connected to the live Neon database for production access.
 Link Repository: Link the blogpost GitHub repository to your Vercel account.
 Set Environment Variable (CRITICAL): During deployment configuration, the DATABASE_URL must be securely added:
 
-Key: DATABASE_URL
+Key: DATABASE_URL,
 Value: (Paste your full postgresql://... connection string)
 
 Deploy: Vercel will build and launch the application using the live data connection.
