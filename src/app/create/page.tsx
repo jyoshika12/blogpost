@@ -64,7 +64,7 @@ export default function CreatePostPage() {
   return (
     <main className="container mx-auto p-8 max-w-3xl">
       <h1 className="text-3xl font-bold mb-8 text-center">Create New Post</h1>
-      {createPost.isError && !createPost.error.data?.zodError && (
+      {createPost.isError && (
         <div className="bg-red-100 border border-red-400 text-red-700 p-3 rounded mb-6">
           General Error: {createPost.error.message}
         </div>
