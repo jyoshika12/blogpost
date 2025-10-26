@@ -1,4 +1,5 @@
-Full-Stack MultiUser Blog Platform
+#Full-Stack MultiUser Blog Platform
+
 This project was developed as a technical assessment to showcase proficiency across a modern, type-safe full-stack environment. It provides a complete, multi-user blogging platform with centralized content management.
 
 Project Status and Features Implemented
