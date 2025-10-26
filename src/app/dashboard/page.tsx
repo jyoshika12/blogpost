@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function DashboardPage() {
   const router = useRouter();
   const { data: posts, isLoading: postsLoading, refetch: refetchPosts, isError: postsError } = trpc.post.getAll.useQuery({});
-  const { data: categories, isLoading: categoriesLoading, refetch: refetchCategories, isError: categoriesError } = trpc.category.getAll.useQuery({});
+  const { data: categories, isLoading: categoriesLoading, refetch: refetchCategories, isError: categoriesError } = trpc.category.getAll.useQuery();
   const deletePostMutation = trpc.post.delete.useMutation({ onSuccess: () => refetchPosts() });
   const deleteCategoryMutation = trpc.category.delete.useMutation({ onSuccess: () => { refetchCategories(); refetchPosts(); } });
   const handleDeletePost = (id: number) => { if (window.confirm("Are you sure?")) { deletePostMutation.mutate({ id }); } };
