@@ -18,7 +18,7 @@ The Dashboard (/dashboard) centralizes all management tasks, showing numbered li
 UI/UX: 
 The design utilizes a professional, responsive grid layout and includes a 3-Section Landing Page structure.
 
-Technical Architecture
+Technical Architecture-
 The core strength of this application is its fully type-safe stack:
 tRPC over REST/GraphQL: This choice eliminates API boilerplate and ensures end-to-end type safety. The frontend automatically inherits data types from the backend procedures, preventing runtime errors during development.
 Drizzle ORM: 
